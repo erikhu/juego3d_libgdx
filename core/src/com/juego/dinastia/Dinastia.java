@@ -37,6 +37,7 @@ public class Dinastia extends ApplicationAdapter {
 	AssetManager recursos;
 	Array<ModelInstance> instancias;
 	boolean cargado;
+	
 	@Override
 	public void create () {
 		
@@ -55,6 +56,7 @@ public class Dinastia extends ApplicationAdapter {
 		
 		recursos = new AssetManager();
 		recursos.load("objeto/sskl.g3db",Model.class);
+		
 		instancias = new Array<ModelInstance>();
 		controlador = new CameraInputController(camara);
 		Gdx.input.setInputProcessor(controlador);
